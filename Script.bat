@@ -1,6 +1,7 @@
 @echo off
 echo "Redcarred2's Cursor restore script for roblox, if you paid for this, you got scammed."
 echo "Please report all errors to Redcarred2#6192"
+cd %USERPROFILE%
 :checkzip
 if exist Cursors.zip (
   echo "Cursors.zip exists, not downloading."
@@ -22,8 +23,8 @@ if exist Cursors\ (
 :copy
 if exist %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ (
   del /Q %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\*.*
-  xcopy Cursors\*.pdf %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ /s
+  xcopy Cursors\*.png %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ /s
 ) else (
-  echo "An error has occured, Is Roblox Installed?"
+  echo "An error has occured, Is Roblox Installed?, If it is, DM Redcarred2#6192"
 )
 
