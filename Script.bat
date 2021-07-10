@@ -23,7 +23,10 @@ if exist Cursors\ (
 :copy
 if exist %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ (
   del /Q %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\*.*
-  xcopy Cursors\*.png %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ /s
+  xcopy \Cursors\ArrowCursor.png %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ /s
+  xcopy Cursors\ArrowCursorDecalDrag.png %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ /s
+  xcopy Cursors\ArrowFarCursor.png %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ /s
+  xcopy Cursors\IBeamCursor.png %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\textures\Cursors\KeyboardMouse\ /s
 ) else (
   echo An error has occured, Is Roblox Installed?, If it is, DM Redcarred2#6192
 )
