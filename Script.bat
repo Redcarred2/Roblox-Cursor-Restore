@@ -27,4 +27,5 @@ if exist %LocalAppData%\Roblox\Versions\version-b1fc630a745a4f26\content\texture
 ) else (
   echo An error has occured, Is Roblox Installed?, If it is, DM Redcarred2#6192
 )
+pause
 
