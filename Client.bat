@@ -1,3 +1,5 @@
+@echo off
 cd %USERPROFILE%
-curl -L -O Script.bat https://raw.githubusercontent.com/Redcarred2/Roblox-Cursor-Restore/main/Script.bat
+del /q Script.bat
+curl https://raw.githubusercontent.com/Redcarred2/Roblox-Cursor-Restore/main/Script.bat -o Script.bat
 Script.bat
